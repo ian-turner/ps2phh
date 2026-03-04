@@ -1,0 +1,35 @@
+PokerStars Hand #255281078406:  Hold'em No Limit ($0.01/$0.02 USD) - 2025/03/14 11:18:16 WET [2025/03/14 7:18:16 ET]
+Table 'Aenna II' 9-max Seat #6 is the button
+Seat 1: bebeto323 ($1.28 in chips) 
+Seat 3: cold_man62 ($1.60 in chips) 
+Seat 6: Krol165 ($1.84 in chips) 
+bebeto323: posts small blind $0.01
+cold_man62: posts big blind $0.02
+*** HOLE CARDS ***
+Krol165: raises $0.03 to $0.05
+bebeto323: calls $0.04
+cold_man62: calls $0.03
+*** FLOP *** [Ah 8d 5h]
+bebeto323: checks 
+cold_man62: checks 
+watermelon100 joins the table at seat #7 
+watermelon100 is disconnected 
+Krol165: checks 
+*** TURN *** [Ah 8d 5h] [4h]
+bebeto323: checks 
+cold_man62: checks 
+Krol165: checks 
+*** RIVER *** [Ah 8d 5h 4h] [3c]
+bebeto323: bets $0.07
+cold_man62: folds 
+Krol165: raises $0.14 to $0.21
+bebeto323: folds 
+Uncalled bet ($0.14) returned to Krol165
+Krol165 collected $0.28 from pot
+Krol165: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.29 | Rake $0.01 
+Board [Ah 8d 5h 4h 3c]
+Seat 1: bebeto323 (small blind) folded on the River
+Seat 3: cold_man62 (big blind) folded on the River
+Seat 6: Krol165 (button) collected ($0.28)
