@@ -1,4 +1,16 @@
 module Main where
 
+import System.Environment (getArgs)
+
+import Parser
+
+
 main :: IO ()
-main = putStrLn "Hello, Haskell!"
+main = do
+  args <- getArgs
+  case args of
+    [] -> error "Please provide input filename"
+    (a:as) -> do
+      fileContent <- readFile a
+      let hh = runParser fileContent
+      putStrLn $ show hh
