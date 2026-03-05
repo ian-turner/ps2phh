@@ -4,7 +4,6 @@ Seat 3: cold_man62 ($1.60 in chips)
 Seat 6: Krol165 ($1.84 in chips) 
 bebeto323: posts small blind $0.01
 cold_man62: posts big blind $0.02
-*** HOLE CARDS ***
 Krol165: raises $0.03 to $0.05
 bebeto323: calls $0.04
 cold_man62: calls $0.03

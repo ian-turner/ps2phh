@@ -8,7 +8,6 @@ Seat 8: Pedro22917 ($0.93 in chips)
 Seat 9: Der_Betsch ($3.31 in chips) 
 Naturel803: posts small blind $0.01
 JohnnyCyclops: posts big blind $0.02
-*** HOLE CARDS ***
 Pedro22917: folds 
 Der_Betsch: folds 
 JaJa1900: calls $0.02

@@ -9,7 +9,6 @@ Seat 8: reynalyn ($0.94 in chips)
 Seat 9: attila947 ($0.76 in chips) 
 bpolka: posts small blind $0.01
 vladimir5421: posts big blind $0.02
-*** HOLE CARDS ***
 noronhamara: folds 
 Nometiemblaelpn: raises $0.02 to $0.04
 In-Solem: folds 

@@ -18,14 +18,9 @@ data Act
   | Shows [Card]
   deriving Show
 
-data Deal
-  = DealHole
-  | DealBoard [Card]
-  deriving Show
-
 data PSAction
   = PSPlayerAction Player Act
-  | PSDealAction Deal
+  | PSDealAction [Card]
   deriving Show
 
 data PokerStarsHand = PokerStarsHand

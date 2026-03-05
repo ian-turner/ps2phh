@@ -135,33 +135,29 @@ playerAction = do
       return $ BetsOrRaisesTo raiseAmt
 
 dealAction :: Parser PSAction
-dealAction = try holeCards
-             <|> try flopCards
+dealAction = try flopCards
              <|> try turnCard
              <|> riverCard
   where
-    holeCards = do
-      string "*** HOLE CARDS ***\n"
-      return $ PSDealAction DealHole
     flopCards = do
       string "*** FLOP *** "
       cards <- readCards
       voidLine
-      return $ PSDealAction $ DealBoard cards
+      return $ PSDealAction cards
     turnCard = do
       string "*** TURN *** "
       readCards
       string " "
       cards <- readCards
       voidLine
-      return $ PSDealAction $ DealBoard cards
+      return $ PSDealAction cards
     riverCard = do
       string "*** RIVER *** "
       readCards
       string " "
       cards <- readCards
       voidLine
-      return $ PSDealAction $ DealBoard cards
+      return $ PSDealAction cards
 
 -- Parsing a player username
 username :: Parser String

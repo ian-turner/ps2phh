@@ -1,0 +1,25 @@
+PokerStars Hand #255287784827:  Hold'em No Limit ($0.01/$0.02 USD) - 2025/03/14 20:37:08 WET [2025/03/14 16:37:08 ET]
+Seat 1: paco0077 ($0.97 in chips) is sitting out
+Seat 6: Naturel803 ($1.97 in chips) is sitting out
+Seat 2: LA2032 ($3.68 in chips) 
+Seat 3: JaJa1900 ($0.69 in chips) 
+Seat 5: Oda1990 ($0.85 in chips) 
+Seat 7: satnyababa ($1.87 in chips) 
+Seat 8: ElmerAncap ($0.84 in chips) 
+Seat 9: ELCHETO ($5.02 in chips) 
+ELCHETO: posts small blind $0.01
+LA2032: posts big blind $0.02
+JaJa1900: folds 
+Oda1990: raises $0.04 to $0.06
+satnyababa: folds 
+ElmerAncap: folds 
+ELCHETO: calls $0.05
+LA2032: calls $0.04
+*** FLOP *** [6h 2c Jc]
+ELCHETO: bets $0.17
+LA2032: calls $0.17
+Oda1990: folds 
+*** TURN *** [6h 2c Jc] [9d]
+ELCHETO: bets $0.49
+LA2032: folds 
+ELCHETO: doesn't show hand 
