@@ -12,6 +12,9 @@ badLine :: String -> Bool
 badLine x =
   (x =~ ".*sits.*") ||
   (x =~ ".*sitting.*") ||
+  (x =~ ".*joins.*") ||
+  (x =~ ".*disconnected.*") ||
+  (x =~ ".*returns.*") ||
   (x =~ ".*collected.*") ||
   (x =~ ".*HOLE.*") ||
   (x =~ ".*SHOW DOWN.*")
