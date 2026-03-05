@@ -1,25 +1,50 @@
-PokerStars Hand #255287784827:  Hold'em No Limit ($0.01/$0.02 USD) - 2025/03/14 20:37:08 WET [2025/03/14 16:37:08 ET]
-Seat 1: paco0077 ($0.97 in chips) is sitting out
-Seat 6: Naturel803 ($1.97 in chips) is sitting out
-Seat 2: LA2032 ($3.68 in chips) 
-Seat 3: JaJa1900 ($0.69 in chips) 
-Seat 5: Oda1990 ($0.85 in chips) 
-Seat 7: satnyababa ($1.87 in chips) 
-Seat 8: ElmerAncap ($0.84 in chips) 
-Seat 9: ELCHETO ($5.02 in chips) 
-ELCHETO: posts small blind $0.01
-LA2032: posts big blind $0.02
-JaJa1900: folds 
-Oda1990: raises $0.04 to $0.06
-satnyababa: folds 
-ElmerAncap: folds 
-ELCHETO: calls $0.05
-LA2032: calls $0.04
-*** FLOP *** [6h 2c Jc]
-ELCHETO: bets $0.17
-LA2032: calls $0.17
-Oda1990: folds 
-*** TURN *** [6h 2c Jc] [9d]
-ELCHETO: bets $0.49
-LA2032: folds 
-ELCHETO: doesn't show hand 
+PokerStars Hand #255291006374:  Hold'em No Limit ($0.01/$0.02 USD) - 2025/03/14 0:01:37 WET [2025/03/14 20:01:37 ET]
+Table 'Aenna II' 9-max Seat #4 is the button
+Seat 1: milkboy555 ($2 in chips) 
+Seat 2: MarcGillett ($1.07 in chips) 
+Seat 3: ezequiel3572 ($1.97 in chips) 
+Seat 4: cberto09 ($2 in chips) 
+Seat 5: rafa_ken89 ($2.51 in chips) 
+Seat 6: Peter_RussellDK ($4.53 in chips) 
+Seat 7: EmulationX ($2 in chips) 
+Seat 8: Tanker_Derbent ($1.29 in chips) 
+Seat 9: khardozo ($2.76 in chips) 
+rafa_ken89: posts small blind $0.01
+Peter_RussellDK: posts big blind $0.02
+*** HOLE CARDS ***
+EmulationX: folds 
+Tanker_Derbent: raises $0.02 to $0.04
+khardozo: raises $0.02 to $0.06
+milkboy555: folds 
+MarcGillett: folds 
+ezequiel3572: folds 
+cberto09: folds 
+rafa_ken89: folds 
+Peter_RussellDK: folds 
+Tanker_Derbent: calls $0.02
+*** FLOP *** [4s 6s 3c]
+Tanker_Derbent: checks 
+khardozo: checks 
+*** TURN *** [4s 6s 3c] [5s]
+Tanker_Derbent: checks 
+khardozo: bets $0.14
+Tanker_Derbent: calls $0.14
+*** RIVER *** [4s 6s 3c 5s] [Th]
+Tanker_Derbent: checks 
+khardozo: bets $0.27
+Tanker_Derbent: folds 
+Uncalled bet ($0.27) returned to khardozo
+khardozo collected $0.41 from pot
+khardozo: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.43 | Rake $0.02 
+Board [4s 6s 3c 5s Th]
+Seat 1: milkboy555 folded before Flop (didn't bet)
+Seat 2: MarcGillett folded before Flop (didn't bet)
+Seat 3: ezequiel3572 folded before Flop (didn't bet)
+Seat 4: cberto09 (button) folded before Flop (didn't bet)
+Seat 5: rafa_ken89 (small blind) folded before Flop
+Seat 6: Peter_RussellDK (big blind) folded before Flop
+Seat 7: EmulationX folded before Flop (didn't bet)
+Seat 8: Tanker_Derbent folded on the River
+Seat 9: khardozo collected ($0.41)

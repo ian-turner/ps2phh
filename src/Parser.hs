@@ -7,10 +7,18 @@ import qualified Text.Parsec.Expr as E
 import Syntax
 
 
-type Parser a = Parsec String () a
+data ParserState =
+  ParserState {
+    usernames :: [String]
+  }
 
-whitespace :: Parser ()
-whitespace = void $ many $ oneOf " \n\t"
+initialParserState :: ParserState
+initialParserState =
+  ParserState {
+    usernames = []
+  }
+
+type Parser a = Parsec String ParserState a
 
 voidLine :: Parser ()
 voidLine = void (skipMany (noneOf "\n") >> (newline <|> (eof >> return '\n')))
@@ -50,13 +58,7 @@ readCards = do
 pokerStarsHand :: Parser PokerStarsHand
 pokerStarsHand = do
   -- Reading header
-  string "PokerStars Hand #"
-  many digit
-  string ":  Hold'em No Limit ("
-  sb <- readCashAmt
-  string "/"
-  bb <- readCashAmt
-  voidLine
+  (sb, bb) <- handHeader
   -- Reading starting stacks
   plStacks <- many playerStack
   let pls = map fst plStacks
@@ -64,6 +66,19 @@ pokerStarsHand = do
   -- Reading player actions and dealing actions
   acts <- many $ try playerAction <|> dealAction
   return $ PokerStarsHand pls [sb, bb] stks acts
+
+-- Parsing the first two lines
+handHeader :: Parser (Float, Float)
+handHeader = do
+  string "PokerStars Hand #"
+  many digit
+  string ":  Hold'em No Limit ("
+  sb <- readCashAmt
+  string "/"
+  bb <- readCashAmt
+  voidLine
+  voidLine
+  return (sb, bb)
 
 -- Parsing player starting stacks in file header
 playerStack :: Parser (String, Float)
@@ -163,8 +178,5 @@ dealAction = try flopCards
 username :: Parser String
 username = do many $ letter <|> digit <|> oneOf "_-"
 
-parseWithEof :: Parser a -> String -> Either ParseError a
-parseWithEof p = parse (p <* eof) ""
-
-runParser :: String -> Either ParseError PokerStarsHand
-runParser cnt = parseWithEof pokerStarsHand cnt
+parseHandHistory :: String -> String -> Either ParseError PokerStarsHand
+parseHandHistory srcName cnt = runParser pokerStarsHand initialParserState srcName cnt

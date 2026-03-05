@@ -1,23 +1,51 @@
-PokerStars Hand #255281078406:  Hold'em No Limit ($0.01/$0.02 USD) - 2025/03/14 11:18:16 WET [2025/03/14 7:18:16 ET]
-Seat 1: bebeto323 ($1.28 in chips) 
-Seat 3: cold_man62 ($1.60 in chips) 
-Seat 6: Krol165 ($1.84 in chips) 
-bebeto323: posts small blind $0.01
-cold_man62: posts big blind $0.02
-Krol165: raises $0.03 to $0.05
-bebeto323: calls $0.04
-cold_man62: calls $0.03
-*** FLOP *** [Ah 8d 5h]
-bebeto323: checks 
-cold_man62: checks 
-Krol165: checks 
-*** TURN *** [Ah 8d 5h] [4h]
-bebeto323: checks 
-cold_man62: checks 
-Krol165: checks 
-*** RIVER *** [Ah 8d 5h 4h] [3c]
-bebeto323: bets $0.07
-cold_man62: folds 
-Krol165: raises $0.14 to $0.21
-bebeto323: folds 
-Krol165: doesn't show hand 
+PokerStars Hand #255285200968:  Hold'em No Limit ($0.01/$0.02 USD) - 2025/03/14 17:48:17 WET [2025/03/14 13:48:17 ET]
+Table 'Aenna II' 9-max Seat #2 is the button
+Seat 5: pikkadhoci ($4.13 in chips) is sitting out
+Seat 6: AthanosC ($1.60 in chips) is sitting out
+Seat 1: CavaloCalvo ($1.83 in chips) 
+Seat 2: ZogBuster ($2 in chips) 
+Seat 3: vladimir5421 ($2.58 in chips) 
+Seat 4: Ooermissus ($2.12 in chips) 
+Seat 7: DIMIS554 ($1.49 in chips) 
+Seat 8: reynalyn ($0.65 in chips) 
+Seat 9: tolmor222 ($0.76 in chips) 
+vladimir5421: posts small blind $0.01
+Ooermissus: posts big blind $0.02
+AthanosC: sits out 
+*** HOLE CARDS ***
+DIMIS554: folds 
+reynalyn: calls $0.02
+tolmor222: calls $0.02
+CavaloCalvo: folds 
+ZogBuster: folds 
+vladimir5421: folds 
+Ooermissus: checks 
+*** FLOP *** [Qh Td Ac]
+Ooermissus: checks 
+reynalyn: checks 
+tolmor222: checks 
+*** TURN *** [Qh Td Ac] [2h]
+Ooermissus: checks 
+reynalyn: checks 
+tolmor222: checks 
+*** RIVER *** [Qh Td Ac 2h] [7c]
+Ooermissus: checks 
+reynalyn: checks 
+tolmor222: checks 
+*** SHOW DOWN ***
+Ooermissus: shows [3c Kh] (high card Ace)
+reynalyn: mucks hand 
+tolmor222: mucks hand 
+Ooermissus collected $0.07 from pot
+*** SUMMARY ***
+Total pot $0.07 | Rake $0 
+Board [Qh Td Ac 2h 7c]
+Seat 5: pikkadhoci
+Seat 6: AthanosC
+Seat 1: CavaloCalvo folded before Flop (didn't bet)
+Seat 2: ZogBuster (button) folded before Flop (didn't bet)
+Seat 3: vladimir5421 (small blind) folded before Flop
+Seat 4: Ooermissus (big blind) showed [3c Kh] and won ($0.07) with high card Ace
+Seat 7: DIMIS554 folded before Flop (didn't bet)
+Seat 8: reynalyn mucked
+Seat 9: tolmor222 mucked

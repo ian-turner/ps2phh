@@ -1,9 +1,38 @@
 module Main where
 
 import System.Environment (getArgs)
+import Text.Regex.TDFA
+import Data.List (filter, intercalate)
 
+import Syntax
 import Parser
 
+
+badLine :: String -> Bool
+badLine x =
+  (x =~ ".*sits.*") ||
+  (x =~ ".*sitting.*") ||
+  (x =~ ".*collected.*") ||
+  (x =~ ".*HOLE.*") ||
+  (x =~ ".*SHOW DOWN.*")
+
+cleanLines :: [String] -> [String]
+cleanLines lns = filter (\x -> not (badLine x)) lns
+
+removeSummary :: [String] -> [String]
+removeSummary (x:xs) =
+  case x of
+    "*** SUMMARY ***" -> []
+    x' -> x : removeSummary xs
+
+showHandHistory :: PokerStarsHand -> IO ()
+showHandHistory (PokerStarsHand pls bs stks acts) = do
+  putStrLn"BLINDS:"
+  mapM_ (\x -> putStrLn $ show x) bs
+  putStrLn "\nPLAYERS:"
+  mapM_ (\(x,y) -> putStrLn $ (x ++ ": $" ++ show y)) $ zip pls stks
+  putStrLn "\nACTIONS:"
+  mapM_ (\x -> putStrLn $ show x) acts
 
 main :: IO ()
 main = do
@@ -12,5 +41,10 @@ main = do
     [] -> error "Please provide input filename"
     (a:as) -> do
       fileContent <- readFile a
-      let hh = runParser fileContent
-      putStrLn $ show hh
+      let lns = lines fileContent
+          lns' = removeSummary $ cleanLines lns
+          fileContent' = intercalate "\n" lns'
+      let result = parseHandHistory a fileContent'
+      case result of
+        Right hh -> showHandHistory hh
+        Left err -> putStrLn $ show err

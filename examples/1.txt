@@ -1,20 +1,42 @@
-PokerStars Hand #255283563382:  Hold'em No Limit ($0.01/$0.02 USD) - 2025/03/14 15:41:36 WET [2025/03/14 11:41:36 ET]
-Seat 2: bpolka ($2.03 in chips) 
-Seat 3: vladimir5421 ($2.24 in chips) 
-Seat 4: noronhamara ($1.23 in chips) 
-Seat 5: Nometiemblaelpn ($0.67 in chips) 
-Seat 6: In-Solem ($3.47 in chips) 
-Seat 7: Danillixx87 ($2.02 in chips) 
-Seat 8: reynalyn ($0.94 in chips) 
-Seat 9: attila947 ($0.76 in chips) 
-bpolka: posts small blind $0.01
+PokerStars Hand #255283250189:  Hold'em No Limit ($0.01/$0.02 USD) - 2025/03/14 15:14:51 WET [2025/03/14 11:14:51 ET]
+Table 'Aenna II' 9-max Seat #1 is the button
+Seat 1: roxxyy99 ($2.03 in chips) 
+Seat 2: Krtecek888 ($2.03 in chips) 
+Seat 3: vladimir5421 ($2 in chips) 
+Seat 4: noronhamara ($1.53 in chips) 
+Seat 5: besnres ($0.33 in chips) 
+Seat 6: In-Solem ($2.89 in chips) 
+Seat 7: Danillixx87 ($2.13 in chips) 
+Seat 8: reynalyn ($1.02 in chips) 
+Seat 9: attila947 ($0.07 in chips) 
+Krtecek888: posts small blind $0.01
 vladimir5421: posts big blind $0.02
+*** HOLE CARDS ***
 noronhamara: folds 
-Nometiemblaelpn: raises $0.02 to $0.04
+besnres: folds 
 In-Solem: folds 
 Danillixx87: folds 
 reynalyn: folds 
-attila947: folds 
-bpolka: folds 
+attila947: raises $0.02 to $0.04
+roxxyy99: folds 
+Krtecek888: calls $0.03
 vladimir5421: folds 
-Nometiemblaelpn: doesn't show hand 
+*** FLOP *** [5s 4h 6h]
+Krtecek888: checks 
+attila947: bets $0.03 and is all-in
+Krtecek888: folds 
+Uncalled bet ($0.03) returned to attila947
+attila947 collected $0.10 from pot
+attila947: doesn't show hand 
+*** SUMMARY ***
+Total pot $0.10 | Rake $0 
+Board [5s 4h 6h]
+Seat 1: roxxyy99 (button) folded before Flop (didn't bet)
+Seat 2: Krtecek888 (small blind) folded on the Flop
+Seat 3: vladimir5421 (big blind) folded before Flop
+Seat 4: noronhamara folded before Flop (didn't bet)
+Seat 5: besnres folded before Flop (didn't bet)
+Seat 6: In-Solem folded before Flop (didn't bet)
+Seat 7: Danillixx87 folded before Flop (didn't bet)
+Seat 8: reynalyn folded before Flop (didn't bet)
+Seat 9: attila947 collected ($0.10)

@@ -7,7 +7,7 @@ type StartingStacks = [Float]
 type Card = String
 type Player = String
 
-data Act
+data Action
   = Folds
   | Calls
   | Checks
@@ -19,7 +19,7 @@ data Act
   deriving Show
 
 data PSAction
-  = PSPlayerAction Player Act
+  = PSPlayerAction Player Action
   | PSDealAction [Card]
   deriving Show
 
