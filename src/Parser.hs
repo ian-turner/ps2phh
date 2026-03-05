@@ -82,12 +82,11 @@ handHeader = do
 
 -- Parsing player starting stacks in file header
 playerStack :: Parser (String, Float)
-playerStack = do
+playerStack = try $ do
   string "Seat "
   many1 alphaNum
   string ": "
-  pl <- username
-  string " ("
+  pl <- newUsername
   stack <- readCashAmt
   voidLine
   return (pl, stack)
@@ -174,9 +173,24 @@ dealAction = try flopCards
       voidLine
       return $ PSDealAction cards
 
+-- Parsing a new player username
+newUsername :: Parser String
+newUsername = do
+  u <- manyTill anyChar (try $ string " (")
+  modifyState (\s -> s { usernames = u:(usernames s) })
+  return u
+
 -- Parsing a player username
+usernameHelper :: [String] -> Parser String
+usernameHelper (x:[]) = string x
+usernameHelper (x:xs) = try (string x) <|> usernameHelper xs
+
 username :: Parser String
-username = do many $ letter <|> digit <|> oneOf "_-"
+username = do --many $ letter <|> digit <|> oneOf "_-"
+  s <- getState
+  let us = usernames s
+  u <- usernameHelper us
+  return u
 
 parseHandHistory :: String -> String -> Either ParseError PokerStarsHand
 parseHandHistory srcName cnt = runParser pokerStarsHand initialParserState srcName cnt

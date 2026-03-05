@@ -3,7 +3,7 @@ Table 'Aenna II' 9-max Seat #2 is the button
 Seat 5: pikkadhoci ($4.13 in chips) is sitting out
 Seat 6: AthanosC ($1.60 in chips) is sitting out
 Seat 1: CavaloCalvo ($1.83 in chips) 
-Seat 2: ZogBuster ($2 in chips) 
+Seat 2: Zog Buster ($2 in chips) 
 Seat 3: vladimir5421 ($2.58 in chips) 
 Seat 4: Ooermissus ($2.12 in chips) 
 Seat 7: DIMIS554 ($1.49 in chips) 
@@ -17,7 +17,7 @@ DIMIS554: folds
 reynalyn: calls $0.02
 tolmor222: calls $0.02
 CavaloCalvo: folds 
-ZogBuster: folds 
+Zog Buster: folds 
 vladimir5421: folds 
 Ooermissus: checks 
 *** FLOP *** [Qh Td Ac]
@@ -43,7 +43,7 @@ Board [Qh Td Ac 2h 7c]
 Seat 5: pikkadhoci
 Seat 6: AthanosC
 Seat 1: CavaloCalvo folded before Flop (didn't bet)
-Seat 2: ZogBuster (button) folded before Flop (didn't bet)
+Seat 2: Zog Buster (button) folded before Flop (didn't bet)
 Seat 3: vladimir5421 (small blind) folded before Flop
 Seat 4: Ooermissus (big blind) showed [3c Kh] and won ($0.07) with high card Ace
 Seat 7: DIMIS554 folded before Flop (didn't bet)
