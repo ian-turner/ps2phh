@@ -1,0 +1,33 @@
+PokerStars Hand #255290056274:  Hold'em No Limit ($0.01/$0.02 USD) - 2025/03/14 22:53:30 WET [2025/03/14 18:53:30 ET]
+Seat 1: TeppoNumminen ($2.12 in chips) 
+Seat 2: dboulay1979 ($2 in chips) 
+Seat 3: Andresinho46 ($4.60 in chips) 
+Seat 4: Catonajack ($1.62 in chips) 
+Seat 5: center650 ($2 in chips) 
+Seat 6: ChicleIWNL123AR ($0.98 in chips) 
+Seat 7: EmulationX ($2 in chips) 
+Seat 8: womz83 ($2.20 in chips) 
+Seat 9: oiiigaaaaaaa ($2 in chips) 
+center650: posts small blind $0.01
+ChicleIWNL123AR: posts big blind $0.02
+EmulationX: calls $0.02
+womz83: raises $0.02 to $0.04
+oiiigaaaaaaa: folds 
+TeppoNumminen: folds 
+dboulay1979: raises $0.12 to $0.16
+Andresinho46: folds 
+Catonajack: folds 
+center650: folds 
+ChicleIWNL123AR: folds 
+EmulationX: folds 
+womz83: calls $0.12
+*** FLOP *** [2c 8h 8d]
+womz83: checks 
+dboulay1979: bets $0.20
+womz83: raises $0.20 to $0.40
+dboulay1979: raises $1.44 to $1.84 and is all-in
+womz83: calls $1.44
+*** TURN *** [2c 8h 8d] [4c]
+*** RIVER *** [2c 8h 8d 4c] [9h]
+womz83: shows [8s Ks] (three of a kind, Eights)
+dboulay1979: shows [Qs Qd] (two pair, Queens and Eights)
