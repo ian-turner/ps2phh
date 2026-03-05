@@ -1,0 +1,21 @@
+PokerStars Hand #255283563382:  Hold'em No Limit ($0.01/$0.02 USD) - 2025/03/14 15:41:36 WET [2025/03/14 11:41:36 ET]
+Seat 2: bpolka ($2.03 in chips) 
+Seat 3: vladimir5421 ($2.24 in chips) 
+Seat 4: noronhamara ($1.23 in chips) 
+Seat 5: Nometiemblaelpn ($0.67 in chips) 
+Seat 6: In-Solem ($3.47 in chips) 
+Seat 7: Danillixx87 ($2.02 in chips) 
+Seat 8: reynalyn ($0.94 in chips) 
+Seat 9: attila947 ($0.76 in chips) 
+bpolka: posts small blind $0.01
+vladimir5421: posts big blind $0.02
+*** HOLE CARDS ***
+noronhamara: folds 
+Nometiemblaelpn: raises $0.02 to $0.04
+In-Solem: folds 
+Danillixx87: folds 
+reynalyn: folds 
+attila947: folds 
+bpolka: folds 
+vladimir5421: folds 
+Nometiemblaelpn: doesn't show hand 

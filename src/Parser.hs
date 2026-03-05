@@ -19,11 +19,19 @@ voidLine = void (skipMany (noneOf "\n") >> (newline <|> (eof >> return '\n')))
 readCashAmt :: Parser Float
 readCashAmt = do
   string "$"
-  dls <- many1 digit
-  string "."
-  cts <- many1 digit
-  let amt = (read $ dls ++ "." ++ cts) :: Float
-  return amt
+  fl <- try decimals <|> nodecimals
+  return fl
+  where
+    decimals = do
+      dls <- many1 digit
+      string "."
+      cts <- many1 digit
+      let amt = (read $ dls ++ "." ++ cts) :: Float
+      return amt
+    nodecimals = do
+      dls <- many1 digit
+      let amt = (read dls) :: Float
+      return amt
 
 -- Reading a card
 readCard :: Parser Card
@@ -48,7 +56,6 @@ pokerStarsHand = do
   sb <- readCashAmt
   string "/"
   bb <- readCashAmt
-  voidLine
   voidLine
   -- Reading starting stacks
   plStacks <- many playerStack
@@ -111,11 +118,11 @@ playerAction = do
       voidLine
       return $ BetsOrRaisesTo betAmt
     mucks = do
-      string "doesn't show"
+      try (string "doesn't show") <|> (string "mucks")
       voidLine
       return $ Mucks
     shows = do
-      string "shows"
+      string "shows "
       cards <- readCards
       voidLine
       return $ Shows cards
@@ -158,7 +165,7 @@ dealAction = try holeCards
 
 -- Parsing a player username
 username :: Parser String
-username = do many $ letter <|> digit <|> char '_'
+username = do many $ letter <|> digit <|> oneOf "_-"
 
 parseWithEof :: Parser a -> String -> Either ParseError a
 parseWithEof p = parse (p <* eof) ""

@@ -1,0 +1,31 @@
+PokerStars Hand #255288329582:  Hold'em No Limit ($0.01/$0.02 USD) - 2025/03/14 21:09:34 WET [2025/03/14 17:09:34 ET]
+Seat 3: JaJa1900 ($0.65 in chips) 
+Seat 4: woody2611 ($1.83 in chips) 
+Seat 5: Oda1990 ($6.27 in chips) 
+Seat 6: Naturel803 ($2.34 in chips) 
+Seat 7: JohnnyCyclops ($2 in chips) 
+Seat 8: Pedro22917 ($0.93 in chips) 
+Seat 9: Der_Betsch ($3.31 in chips) 
+Naturel803: posts small blind $0.01
+JohnnyCyclops: posts big blind $0.02
+*** HOLE CARDS ***
+Pedro22917: folds 
+Der_Betsch: folds 
+JaJa1900: calls $0.02
+woody2611: folds 
+Oda1990: folds 
+Naturel803: calls $0.01
+JohnnyCyclops: checks 
+*** FLOP *** [Ts 8h Jd]
+Naturel803: bets $0.06
+JohnnyCyclops: calls $0.06
+JaJa1900: folds 
+*** TURN *** [Ts 8h Jd] [Qs]
+Naturel803: checks 
+JohnnyCyclops: checks 
+*** RIVER *** [Ts 8h Jd Qs] [5c]
+Naturel803: checks 
+JohnnyCyclops: bets $0.07
+Naturel803: calls $0.07
+JohnnyCyclops: shows [3h 9s] (a straight, Eight to Queen)
+Naturel803: mucks hand 
