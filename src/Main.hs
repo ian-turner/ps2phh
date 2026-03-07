@@ -6,7 +6,6 @@ import Data.List (filter, intercalate)
 
 import Syntax
 import Parser
-import Convert
 
 
 badLine :: String -> Bool

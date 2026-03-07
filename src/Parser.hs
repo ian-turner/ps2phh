@@ -61,9 +61,19 @@ pokerStarsHand = do
   (sb, bb, btn') <- handHeader
   -- Reading player information
   pls <- many newPlayer
+  -- Re-ordering players so that button is last
+  let pls' = reorderPlayers pls btn'
   -- Reading player actions and dealing actions
   acts <- many $ try playerAction <|> dealAction
-  return $ PokerStarsHand pls [sb, bb] acts btn'
+  return $ PokerStarsHand pls' [sb, bb] acts btn'
+
+reorderPlayers :: [Player] -> Int -> [Player]
+reorderPlayers (a@(Player _ pos _):pls) btn =
+  let pls' = (pls ++ [a]) in
+  if pos == btn then
+    pls'
+  else
+    reorderPlayers pls' btn
 
 -- Parsing the first two lines
 handHeader :: Parser (Float, Float, Int)
