@@ -65,12 +65,12 @@ pokerStarsHand = do
   let pls' = reorderPlayers pls btn'
   -- Reading player actions and dealing actions
   acts <- many $ try playerAction <|> dealAction
-  return $ PokerStarsHand pls' [sb, bb] acts btn'
+  return $ PokerStarsHand pls' [sb, bb] acts
 
 reorderPlayers :: [Player] -> Int -> [Player]
 reorderPlayers (a@(Player _ pos _):pls) btn =
   let pls' = (pls ++ [a]) in
-  if pos == btn then
+  if (pos == btn) then
     pls'
   else
     reorderPlayers pls' btn
@@ -94,7 +94,7 @@ handHeader = do
   -- Return blinds, button
   return (sb, bb, btn')
 
--- Parsing player starting stacks in file header
+-- Parsing player names/stacks/positions
 newPlayer :: Parser Player
 newPlayer = try $ do
   -- Parsing position
@@ -114,9 +114,7 @@ playerAction :: Parser PSAction
 playerAction = do
   pl <- username
   string ": "
-  act <- try smallBlind
-         <|> try bigBlind
-         <|> try bets
+  act <- try bets
          <|> try raisesTo
          <|> try calls
          <|> try checks
@@ -125,14 +123,6 @@ playerAction = do
          <|> mucks
   return $ PSPlayerAction pl act
   where
-    smallBlind = do
-      string "posts small blind"
-      voidLine
-      return PostsSmallBlind
-    bigBlind = do
-      string "posts big blind"
-      voidLine
-      return PostsBigBlind
     calls = do
       string "calls"
       voidLine

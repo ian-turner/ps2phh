@@ -71,6 +71,7 @@ executable ps2phh
     build-depends:    base ^>=4.20.2.0
                       , parsec
                       , regex-tdfa
+                      , containers
 
     -- Directories containing source files.
     hs-source-dirs:   src
