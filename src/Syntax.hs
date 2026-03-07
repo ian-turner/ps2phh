@@ -3,9 +3,7 @@ module Syntax where
 
 
 type BlindsOrStraddles = [Float]
-type StartingStacks = [Float]
-type Card = String
-type Player = String
+data Player = Player String Int Float deriving Show -- username, position, stack
 
 data Action
   = Folds
@@ -15,17 +13,17 @@ data Action
   | PostsBigBlind
   | BetsOrRaisesTo Float
   | Mucks
-  | Shows [Card]
+  | Shows [String]
   deriving Show
 
 data PSAction
-  = PSPlayerAction Player Action
-  | PSDealAction [Card]
+  = PSPlayerAction String Action
+  | PSDealAction [String]
   deriving Show
 
 data PokerStarsHand = PokerStarsHand
   [Player]
   BlindsOrStraddles
-  StartingStacks
   [PSAction]
+  Int
   deriving Show

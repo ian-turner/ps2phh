@@ -6,6 +6,7 @@ import Data.List (filter, intercalate)
 
 import Syntax
 import Parser
+import Convert
 
 
 badLine :: String -> Bool
@@ -29,11 +30,12 @@ removeSummary (x:xs) =
     x' -> x : removeSummary xs
 
 showHandHistory :: PokerStarsHand -> IO ()
-showHandHistory (PokerStarsHand pls bs stks acts) = do
-  putStrLn"BLINDS:"
+showHandHistory (PokerStarsHand pls bs acts btn) = do
+  putStrLn "BLINDS:"
   mapM_ (\x -> putStrLn $ show x) bs
+  putStrLn $ "BUTTON: " ++ (show btn)
   putStrLn "\nPLAYERS:"
-  mapM_ (\(x,y) -> putStrLn $ (x ++ ": $" ++ show y)) $ zip pls stks
+  mapM_ (\x -> putStrLn $ show x) $ pls
   putStrLn "\nACTIONS:"
   mapM_ (\x -> putStrLn $ show x) acts
 

@@ -42,13 +42,13 @@ readCashAmt = do
       return amt
 
 -- Reading a card
-readCard :: Parser Card
+readCard :: Parser String
 readCard = do
   r <- anyChar
   s <- anyChar
   return $ [r,s]
 
-readCards :: Parser [Card]
+readCards :: Parser [String]
 readCards = do
   string "["
   cards <- readCard `sepBy1` (char ' ')
@@ -58,18 +58,17 @@ readCards = do
 pokerStarsHand :: Parser PokerStarsHand
 pokerStarsHand = do
   -- Reading header
-  (sb, bb) <- handHeader
-  -- Reading starting stacks
-  plStacks <- many playerStack
-  let pls = map fst plStacks
-  let stks = map snd plStacks
+  (sb, bb, btn') <- handHeader
+  -- Reading player information
+  pls <- many newPlayer
   -- Reading player actions and dealing actions
   acts <- many $ try playerAction <|> dealAction
-  return $ PokerStarsHand pls [sb, bb] stks acts
+  return $ PokerStarsHand pls [sb, bb] acts btn'
 
 -- Parsing the first two lines
-handHeader :: Parser (Float, Float)
+handHeader :: Parser (Float, Float, Int)
 handHeader = do
+  -- Parsing first line to get blinds
   string "PokerStars Hand #"
   many digit
   string ":  Hold'em No Limit ("
@@ -77,19 +76,29 @@ handHeader = do
   string "/"
   bb <- readCashAmt
   voidLine
+  -- Parsing second line to get button
+  manyTill anyChar (try $ string "Seat #")
+  btn <- many1 digit
+  let btn' = (read btn) :: Int
   voidLine
-  return (sb, bb)
+  -- Return blinds, button
+  return (sb, bb, btn')
 
 -- Parsing player starting stacks in file header
-playerStack :: Parser (String, Float)
-playerStack = try $ do
+newPlayer :: Parser Player
+newPlayer = try $ do
+  -- Parsing position
   string "Seat "
-  many1 alphaNum
+  seat <- many1 digit
+  let pos = read seat :: Int
   string ": "
-  pl <- newUsername
+  -- Parsing username
+  name <- manyTill anyChar (try $ string " (")
+  modifyState (\s -> s { usernames = name:(usernames s) })
+  -- Parsing stack
   stack <- readCashAmt
   voidLine
-  return (pl, stack)
+  return $ Player name pos stack
 
 playerAction :: Parser PSAction
 playerAction = do
@@ -172,13 +181,6 @@ dealAction = try flopCards
       cards <- readCards
       voidLine
       return $ PSDealAction cards
-
--- Parsing a new player username
-newUsername :: Parser String
-newUsername = do
-  u <- manyTill anyChar (try $ string " (")
-  modifyState (\s -> s { usernames = u:(usernames s) })
-  return u
 
 -- Parsing a player username
 usernameHelper :: [String] -> Parser String
